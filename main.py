@@ -7,8 +7,7 @@ from src import Instagram
 from src import Tiktok
 from src import write
 
-class Main:
-
+def main():
     url = sys.argv[1]
     
     # Memeriksa apakah URL mengandung "https://"
@@ -27,7 +26,6 @@ class Main:
         tiktok.ex(path=PATH, tiktok_url=url)
 
 if __name__ == '__main__':
-    main = Main()
-    main.sosmed()
+    main()
     
 
